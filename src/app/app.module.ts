@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AdminModule } from './admin/admin.module';
 import { BootstrapModule } from './bootstrap/bootstrap.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,13 +22,14 @@ import { PhotosComponent } from './photos/photos.component';
     HomeComponent,
     MyservicesComponent,
     PhotosComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AdminModule,
     BootstrapModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,33 +19,31 @@
                           <h4>Flagstone</h4>
                           <p class="text-muted">Category: Hardscape</p>
                         </div>
-
-                  <!-- <button type="button" class="btn btn-primary" (click)="staticModal.show()">
-                    Open Modal Popup</button> -->
-                  <div class="modal fade" bsModal #flagstoneModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="flagstoneLabel" aria-hidden="true">
+                    <div class="modal fade" bsModal #flagstoneModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="flagstoneLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title pull-left">Flagstone</h4>
-                          <button type="button" class="close pull-right" aria-label="Close" 
-                              (click)="flagstoneModal.hide()">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
                         <div class="modal-body">
-                            <img class="img-fluid d-block mx-auto" src="../../assets/images/flagstone_2.jpg" alt="">
-                            <p class="">I dry laid this flagstone patio in the court yard between his rental units.</p>
+                          <ngb-carousel>
+                            <ng-template  ngbSlide>
+                              <img src="../../assets/images/flagstone_1.jpg" alt="Random first slide">
+                            </ng-template>
+                            <ng-template ngbSlide>
+                              <img src="../../assets/images/flagstone_2.jpg" alt="Random second slide">
+                            </ng-template>
+                          </ngb-carousel>
+                          <!-- Carousel End -->
+                          <p class="">I dry laid this flagstone patio in the court yard between his rental units.</p>
                             <ul class="list-inline item-intro text-muted">
                               <li>Date: May 2019</li>
                               <li>Client: Steve - Chula Vita</li>
                               <li>Category: Hardscape</li>
                             </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button"  aria-label="Close" 
+                          (click)="flagstoneModal.hide()">Close</button>
                         </div>
                       </div>
                     </div>
-                  
-                </div>
-                  
+                  </div>
                 </div>
                 <div class="col-md-4 col-sm-12 portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" (click)="garage_1_Modal.show()">
@@ -65,10 +63,19 @@
                     <div class="modal-dialog modal-lg">
                       <div class="modal-content">
                         <div class="modal-body">
-                          <button type="button" class="close pull-right" aria-label="Close" 
-                            (click)="garage_1_Modal.hide()"><span aria-hidden="true">×</span></button>
+                          <ngb-carousel>
+                              <ng-template  ngbSlide>
+                                <img src="../../assets/images/garage_1.jpg" alt="Random first slide">
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                <img src="../../assets/images/garage_2.jpg" alt="Random second slide">
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                <img src="../../assets/images/garage_3.jpg" alt="Random third slide">
+                              </ng-template>
+                            </ngb-carousel>
+                            <!-- Carousel End -->
                           <h4 class="modal-title">Garage</h4>
-                          <img class="img-fluid d-block mx-auto" src="../../assets/images/garage_3.jpg" alt="">
                           <p class="">Insulation and Drywall installation</p>
                           <ul class="list-inline item-intro text-muted">
                             <li>Date: May 2019</li>
@@ -100,15 +107,30 @@
                         <div class="modal-dialog modal-lg">
                           <div class="modal-content">
                             <div class="modal-body">
-                              <button type="button" class="close pull-right" aria-label="Close" 
-                                (click)="cmpToiletModal.hide()"><span aria-hidden="true">×</span></button>
+                              <ngb-carousel>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/composttoliet_1.jpg" alt="First slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/composttoliet_2.jpg" alt="Second slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/composttoliet_3.jpg" alt="Third slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/composttoliet_4.jpg" alt="Fourth slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/composttoliet_5.jpg" alt="Last slide">
+                                </ng-template>                                
+                              </ngb-carousel>
+                              <!-- Carousel End -->
                               <h4 class="modal-title">Compost Toilet</h4>
-                              <img class="img-fluid d-block mx-auto" src="../../assets/images/composttoliet_5.jpg" alt="">
                               <p class="">Compost Toilet</p>
                               <ul class="list-inline item-intro text-muted">
-                                <li>Date: May 2019</li>
-                                <li>Client: Brad - Kensington</li>
-                                <li>Category: Drywall</li>
+                                <li>Date: April 2019</li>
+                                <li>Client: Julie - Dehesa</li>
+                                <li>Category: Reduce, Recycle, Reuse</li>
                               </ul>
                               <button class="btn btn-primary" data-dismiss="modal" type="button"  aria-label="Close" 
                               (click)="cmpToiletModal.hide()">Close</button>
@@ -135,10 +157,21 @@
                         <div class="modal-dialog modal-lg">
                           <div class="modal-content">
                             <div class="modal-body">
-                              <button type="button" class="close pull-right" aria-label="Close" 
-                                (click)="garage_2_Modal.hide()"><span aria-hidden="true">×</span></button>
+                              <ngb-carousel>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/garage_4.jpg" alt="First slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/garage_5.jpg" alt="Second slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/garage_6.jpg" alt="Third slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/garage_7.jpg" alt="Fourth slide">
+                                </ng-template>
+                              </ngb-carousel>
                               <h4 class="modal-title">Garage</h4>
-                              <img class="img-fluid d-block mx-auto" src="../../assets/images/garage_7.jpg" alt="">
                               <p class="">Garage</p>
                               <ul class="list-inline item-intro text-muted">
                                 <li>Date: April 2019</li>
@@ -153,10 +186,10 @@
                       </div>
                 </div>
                 <div class="col-md-4 col-sm-12 c2a">
-                    <button class="btn btn-primary" type="button" routerLink="../contact">Free Estimates</button>
+                    <button class="btn btn-primary font-italic" type="button" routerLink="../contact">Free Estimates</button>
                     <br>
                     <br>
-                    <button class="btn btn-primary" type="button" routerLink="../services">Services I Provide</button>
+                    <button class="btn btn-primary font-italic" type="button" routerLink="../services">Services I Provide</button>
                 </div>
                 <div class="col-md-4 col-sm-12 portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" (click)="solarShowerModal.show()">
@@ -176,10 +209,21 @@
                         <div class="modal-dialog modal-lg">
                           <div class="modal-content">
                             <div class="modal-body">
-                              <button type="button" class="close pull-right" aria-label="Close" 
-                                (click)="solarShowerModal.hide()"><span aria-hidden="true">×</span></button>
+                              <ngb-carousel>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/solarshower_4.jpg" alt="First slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/solarshower_5.jpg" alt="Second slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/solarshower_4.jpg" alt="Third slide">
+                                </ng-template>
+                                <ng-template  ngbSlide>
+                                  <img src="../../assets/images/solarshower_5.jpg" alt="Fourth slide">
+                                </ng-template>
+                              </ngb-carousel>
                               <!-- <h4 class="modal-title">Solar Shower</h4> -->
-                              <img class="img-fluid d-block mx-auto" src="../../assets/images/solarshower_5.jpg" alt="">
                               <p class="">Soalr Shower</p>
                               <ul class="list-inline item-intro text-muted">
                                 <li>Date: April 2019</li>
