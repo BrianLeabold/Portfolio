@@ -1,0 +1,212 @@
+<div  class="container container-fluid content">
+  <div class="row">
+      <div class="col-md-9 col-sm-12 col-xs-12">
+          <div class="row">
+              <div class="content col-sm-12">
+                  <h2>Photos</h2>
+                  <p class="lead">Photos of current and recent projects</p>
+              <div class="row">
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" data-target="#flagstone" (click)="flagstoneModal.show()">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="../../assets/images/flagstone_2.jpg" alt="Flagstone Patio">
+                      </a>
+                      <div class="portfolio-caption">
+                          <h4>Flagstone</h4>
+                          <p class="text-muted">Category: Hardscape</p>
+                        </div>
+
+                  <!-- <button type="button" class="btn btn-primary" (click)="staticModal.show()">
+                    Open Modal Popup</button> -->
+                  <div class="modal fade" bsModal #flagstoneModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="flagstoneLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title pull-left">Flagstone</h4>
+                          <button type="button" class="close pull-right" aria-label="Close" 
+                              (click)="flagstoneModal.hide()">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid d-block mx-auto" src="../../assets/images/flagstone_2.jpg" alt="">
+                            <p class="">I dry laid this flagstone patio in the court yard between his rental units.</p>
+                            <ul class="list-inline item-intro text-muted">
+                              <li>Date: May 2019</li>
+                              <li>Client: Steve - Chula Vita</li>
+                              <li>Category: Hardscape</li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                  
+                </div>
+                  
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                  <a class="portfolio-link" data-toggle="modal" (click)="garage_1_Modal.show()">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                        <i class="fas fa-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="../../assets/images/garage_3.jpg" alt="Flagstone Patio">
+                  </a>
+                  <div class="portfolio-caption">
+                      <h4>Garage</h4>
+                      <p class="text-muted">Category: Drywall</p>
+                  </div>
+                  <!-- Modal -->
+                  <div class="modal fade" bsModal #garage_1_Modal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="garage_1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <button type="button" class="close pull-right" aria-label="Close" 
+                            (click)="garage_1_Modal.hide()"><span aria-hidden="true">×</span></button>
+                          <h4 class="modal-title">Garage</h4>
+                          <img class="img-fluid d-block mx-auto" src="../../assets/images/garage_3.jpg" alt="">
+                          <p class="">Insulation and Drywall installation</p>
+                          <ul class="list-inline item-intro text-muted">
+                            <li>Date: May 2019</li>
+                            <li>Client: Brad - Kensington</li>
+                            <li>Category: Drywall</li>
+                          </ul>
+                          <button class="btn btn-primary" data-dismiss="modal" type="button"  aria-label="Close" 
+                          (click)="garage_1_Modal.hide()">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" (click)="cmpToiletModal.show()">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="../../assets/images/composttoliet_5.jpg" alt="Flagstone Patio">
+                      </a>
+                      <div class="portfolio-caption">
+                          <h4>Compost Toilet</h4>
+                          <p class="text-muted">Category: Recycle</p>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" bsModal #cmpToiletModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="garage_1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <button type="button" class="close pull-right" aria-label="Close" 
+                                (click)="cmpToiletModal.hide()"><span aria-hidden="true">×</span></button>
+                              <h4 class="modal-title">Compost Toilet</h4>
+                              <img class="img-fluid d-block mx-auto" src="../../assets/images/composttoliet_5.jpg" alt="">
+                              <p class="">Compost Toilet</p>
+                              <ul class="list-inline item-intro text-muted">
+                                <li>Date: May 2019</li>
+                                <li>Client: Brad - Kensington</li>
+                                <li>Category: Drywall</li>
+                              </ul>
+                              <button class="btn btn-primary" data-dismiss="modal" type="button"  aria-label="Close" 
+                              (click)="cmpToiletModal.hide()">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" (click)="garage_2_Modal.show()">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="../../assets/images/garage_7.jpg" alt="Garage #2">
+                      </a>
+                      <div class="portfolio-caption">
+                          <h4>Garage - Dehesa</h4>
+                          <p class="text-muted">Category: Garage</p>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" bsModal #garage_2_Modal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="garage_1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <button type="button" class="close pull-right" aria-label="Close" 
+                                (click)="garage_2_Modal.hide()"><span aria-hidden="true">×</span></button>
+                              <h4 class="modal-title">Garage</h4>
+                              <img class="img-fluid d-block mx-auto" src="../../assets/images/garage_7.jpg" alt="">
+                              <p class="">Garage</p>
+                              <ul class="list-inline item-intro text-muted">
+                                <li>Date: April 2019</li>
+                                <li>Client: "Z" - Dehesa</li>
+                                <li>Category: Remodel</li>
+                              </ul>
+                              <button class="btn btn-primary" data-dismiss="modal" type="button"  aria-label="Close" 
+                              (click)="garage_2_Modal.hide()">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 col-sm-12 c2a">
+                    <button class="btn btn-primary" type="button" routerLink="../contact">Free Estimates</button>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary" type="button" routerLink="../services">Services I Provide</button>
+                </div>
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" (click)="solarShowerModal.show()">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="../../assets/images/solarshower_4.jpg" alt="Garage #2">
+                      </a>
+                      <div class="portfolio-caption">
+                          <h4>Solar Shower</h4>
+                          <p class="text-muted">Category: Recycle</p>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" bsModal #solarShowerModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="garage_1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <button type="button" class="close pull-right" aria-label="Close" 
+                                (click)="solarShowerModal.hide()"><span aria-hidden="true">×</span></button>
+                              <!-- <h4 class="modal-title">Solar Shower</h4> -->
+                              <img class="img-fluid d-block mx-auto" src="../../assets/images/solarshower_5.jpg" alt="">
+                              <p class="">Soalr Shower</p>
+                              <ul class="list-inline item-intro text-muted">
+                                <li>Date: April 2019</li>
+                                <li>Client: Julie - Dehesa</li>
+                                <li>Category: Recycle</li>
+                              </ul>
+                              <button class="btn btn-primary" data-dismiss="modal" type="button"  aria-label="Close" 
+                              (click)="solarShowerModal.hide()">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-12 col-xs-12 aside">
+              <img alt="Logo" class="img-fluid" src="../../assets/BHSlogo.png">
+              <hr>
+              <p class="lead">
+                Quality is like buy oats. If you want good clean oats, you need to pay
+                a fair price. But if you are ok with oats that have already been through
+                the horse, well those a a bit cheaper.
+              </p>
+      </div>
+  </div>
+</div>
+
+
