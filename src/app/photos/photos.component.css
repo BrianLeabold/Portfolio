@@ -1,3 +1,9 @@
+.aside{
+  margin-bottom: 80px;
+}
+.mb{
+  margin-bottom: 3rem
+}
 .portfolio-modal .modal-dialog {
     margin: auto;
     max-width: 800px;

@@ -1,138 +1,77 @@
-<div  class="container container-fluid">
-    <div class="row">
-        <div class="col-md-9 col-sm-12 col-xs-12">
-            <div class="row">
-                <div class="content col-sm-12">
-                    <h2>Services</h2>
-                    <p class="lead">Providing an array of services for my customers</p>
-                        <p>From advice and assistance on small projects; to design, layout`, and contractor liaison. Do you have an
-                        idea or a concept you like, but you don't know if it's possible? I can help with that. Have a DIY project
-                        you want to tackle? I will provide a material list for you. Need a hand with something? I have two.
+<div class="row container-fluid content">
+    <div class="col-md-1"></div>
+      <div class="col-md-8 col-sm-12 col-xs-12">
+      <div class="row">
+          <div class="content col-sm-12">
+              <h2>Services</h2>
+              <p class="lead">Providing an array of services for my customers</p>
+                  <p>From advice and assistance on small projects; to design, layout`, and contractor liaison. Do you have an
+                  idea or a concept you like, but you don't know if it's possible? I can help with that. Have a DIY project
+                  you want to tackle? I will provide a material list for you. Need a hand with something? I have two.
+                  </p>
+                  <p>It's never easy managing large construction/remodeling projects. By setting up timelines and goals with
+                  your contractors and only billing you my actual time, you can save money over using a GC.
+                  </p>
+                  <p><a routerLink="../contact">Schedule your free consultation today.</a></p>
+                 
+            <ngb-tabset [justify]="currentJustify">
+              <ngb-tab>
+              <ng-template class="service-tab" ngbTabTitle><span class="tab-title"><h5>Planning</h5></span></ng-template>
+                    <ng-template ngbTabContent>
+                        <p class="lead">From advice and assistance on small projects; to design, layout, and
+                            contractor liaison. Do you have an idea or a concept you like? Have a DIY project you
+                            want to tackle? Need a hand with something?
                         </p>
-                        <p>It's never easy managing large construction/remodeling projects. By setting up timelines and goals with
-                        your contractors and only billing you my actual time, you can save money over using a GC.
+                        <p>
+                            Save yourself time by having me plan your next project. With over 25 years of
+                            experience, I will ensure your project runs smoothly. After discussing the
+                            specifications and time frame, I will create a detailed set of plans for you. From drawings and material lists, to the logistics of getting materials and obtaining
+                            permits; I will save you from the leg work that goes into construction and remodeling
+                            projects.
+                        <a routerLink="../contact">Lets Talk </a>
                         </p>
-                        <p><a routerLink="contact">Schedule your free consultation today.</a></p>
-                    <!-- Services Content Area -->
-				<!-- <div id="services" class="row">
-                    Services Content Nav
-                    <div id="col-servicesNav" class="col-md-3 col-sm-3">
-                       <div class="nav flex-column nav-pills" id="servicesNav" role="tablist" aria-orientation="vertical">
-                          <a class="nav-link tab-links active" id="siteplan-tab" data-toggle="pill" href="#siteplan" role="tab" aria-controls="siteplan" aria-selected="true">Planning</a>
-                          <a class="nav-link tab-links" id="projAssist-tab" data-toggle="pill" href="#projAssist" role="tab" aria-controls="projAssist" aria-selected="false">Assistance</a>
-                          <a class="nav-link tab-links" id="matlist-tab" data-toggle="pill" href="#matlist" role="tab" aria-controls="matlist" aria-selected="false">Material Lists</a>
-                         <a class="nav-link tab-links" id="investigation-tab" data-toggle="pill" href="#investigation" role="tab" aria-controls="investigation" aria-selected="false">Investigation</a>
-                          <a class="nav-link tab-links" id="liaison-tab" data-toggle="pill" href="#liaison" role="tab" aria-controls="liaison" aria-selected="false">Contractor Liaison</a>
-                       </div>
-                    </div>
-                    Services Content
-                    <div id="col-services" class="col-md-8 col-sm-9">
-                       <div class="tab-content" id="servicesContent">
-                          <div class="tab-pane fade show active" id="siteplan" role="tabpanel" aria-labelledby="siteplan-tab">
-                              <h2 id="sitePlanning">Project and Site Planning</h2>
-                                <p class="lead">From advice and assistance on small projects; to design, layout, and
-                                    contractor liaison. Do you have an idea or a concept you like? Have a DIY project you
-                                    want to tackle? Need a hand with something?
-                                </p>
-                                <p>
-                                    Save yourself time by having me plan your next project. With over 25 years of
-                                    experience, I will ensure your project runs smoothly. After discussing the
-                                    specifications and time frame, I will create a detailed set of plans for you. From drawings and material lists, to the logistics of getting materials and obtaining
-                                    permits; I will save you from the leg work that goes into construction and remodeling
-                                    projects.
-                                <a routerLink="/contact">Lets Talk </a>
-                                </p>
-                          </div>
-                          <div class="tab-pane fade" id="projAssist" role="tabpanel" aria-labelledby="projAssist-tab">
-                              <h2>Project Assistance</h2>
-                              <p class="lead">Do you have a D-I-Y project, but need an extra set of hands?
-                              </p>
-                              <p>We have all been there a time or two. I will lend you the assistance
-                                you need and give you my expertise for free. Save yourself some money
-                                and call me before one of those high priced contractors.</p>
-                              <p>One of those d-i-y projects that most home owners have a tougher
-                                time with is spackeling drywall. “Thin to Win” is my motto here,
-                                multiple coats over a couple of days is the way to go. I can teach
-                                you a couple other tricks to make your project look professional.
-                                <a routerLink="/contact"> Lets Talk </a>
-                              </p>
-                            </div>
-                            <div class="tab-pane fade" id="matlist" role="tabpanel" aria-labelledby="matlist-tab">
-                              <h2>Material Lists</h2>
-                              <p class="lead">Need a material list for a project? I can help with that.
-                              </p>
-                              <p>So you found a set of plans for a shed you love, but it didn't come
-                                with a material list. That's not a problem. <a routerLink="/contact">After your free consultation, </a>
-                                I will use those plans and your additional specifications to create a
-                                material list for you.
-                              </p>
-                              <p>Need some help going out and picking up the materials? I will do that
-                                too. We both know how busy those stores can be on the weekends and
-                                sometimes you can't get good service with the added swell of customers.
-                              </p>
-                            </div>
-                          <div class="tab-pane fade" id="investigation" role="tabpanel" aria-labelledby="investigation-tab">
-                          <h2>Investigation</h2>
-                          <p class="lead">Add description here
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab>
+                    <ng-template ngbTabTitle><h5>Assistance</h5></ng-template>
+                    <ng-template ngbTabContent>
+                        <p class="lead">Do you have a D-I-Y project, but need an extra set of hands?
                           </p>
-                          <p>
-                <a routerLink="/contact">Lets Talk </a>
+                          <p>We have all been there a time or two. I will lend you the assistance
+                            you need and give you my expertise for free. Save yourself some money
+                            and call me before one of those high priced contractors.</p>
+                          <p>One of those d-i-y projects that most home owners have a tougher
+                            time with is spackeling drywall. “Thin to Win” is my motto here,
+                            multiple coats over a couple of days is the way to go. I can teach
+                            you a couple other tricks to make your project look professional.
+                            <a routerLink="../contact"> Lets Talk </a>
                           </p>
-                          </div>
-                          <div class="tab-pane fade" id="liaison" role="tabpanel" aria-labelledby="liaison-tab">
-                          <h2>Contractor Liaison</h2>
-                          <p class="lead">Do you need a Project Manager? You get to maintain complete control without having to converse with multiple trades.
+                    </ng-template>
+                  </ngb-tab>
+                  <ngb-tab>
+                    <ng-template ngbTabTitle><h5>Contractor Liason</h5></ng-template>
+                    <ng-template ngbTabContent>
+                        <p class="lead">Do you need a Project Manager? You get to maintain complete control without having to converse with multiple trades.
                           </p>
                           <p>I have over 20 years experience in construction. This affords you the ability to communicate with the multitude of trades you will encounter during your project.
-                Yet keep things moving when something unexpected comes up.
-              </p>
-              <p>Problem solving is not only about weeding through the issue, but also being knowledgeable enough to make the right decision in regards to the situation.
-                <a routerLink="/contact">Lets Talk </a>
+                          Yet keep things moving when something unexpected comes up.</p>
+                          <p>Problem solving is not only about weeding through the issue, but also being 
+                            knowledgeable enough to make the right decision in regards to the situation.
+                          <a routerLink="../contact">Lets Talk </a>
                           </p>
-                          </div>
-                       </div>
-                    </div>
-                  </div> -->
-                  <!-- End Services Content Area -->    
-                  <ngb-tabset [justify]="currentJustify">
-                    <ngb-tab>
-                    <ng-template class="service-tab" ngbTabTitle><span class="tab-title">Simple</span></ng-template>
-                          <ng-template ngbTabContent>
-                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
-                            master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
-                            dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum
-                            iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-                          </ng-template>
-                        </ngb-tab>
-                        <ngb-tab>
-                          <ng-template class="tab-title" ngbTabTitle><b>Fancy</b> title</ng-template>
-                          <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
-                            <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
-                            craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
-                            cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia
-                            yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean
-                            shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero
-                            sint qui sapiente accusamus tattooed echo park.</p>
-                          </ng-template>
-                        </ngb-tab>
-                        <ngb-tab title="Disabled">
-                          <ng-template ngbTabContent>
-                            <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
-                          </ng-template>
-                        </ngb-tab>
-                      </ngb-tabset>       
-                </div>
-            </div>
-        </div>
-        <div id="aside" class="col-md-3 col-sm-12 col-xs-12">
-                <img alt="Logo" class="img-fluid" src="../../assets/BHSlogo.png">
-                <hr>
-                <p class="lead">
-                  Quality is like buy oats. If you want good clean oats, you need to pay
-                  a fair price. But if you are ok with oats that have already been through
-                  the horse, well those a a bit cheaper.
-                </p>
-        </div>
-    </div>
+                    </ng-template>
+                  </ngb-tab>
+                </ngb-tabset>       
+          </div>
+      </div>
+  </div>
+  <div id="aside" class="col-md-3 col-sm-12 col-xs-12">
+          <img alt="Logo" class="img-fluid" src="../../assets/BHSlogo.png">
+          <hr>
+          <p class="lead">
+            Quality is like buy oats. If you want good clean oats, you need to pay
+            a fair price. But if you are ok with oats that have already been through
+            the horse, well those a a bit cheaper.
+          </p>
+  </div>
 </div>
-<script async src="//www.instagram.com/embed.js"></script>

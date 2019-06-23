@@ -1,8 +1,15 @@
 .tab-title{
-    color: red;
+    color:#093c67;
 }
 
-.service-tab{
-    border: 1px solid red !important;
+.lead{
+ padding-top: 1rem;
+}
+#aside{
+    margin-top: 15px;
+    padding-left: 30px
+}
 
+.content{
+    margin-top: 15px;
 }
