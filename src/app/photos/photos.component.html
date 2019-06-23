@@ -6,6 +6,60 @@
                   <h2>Photos</h2>
                   <p class="lead">Photos of current and recent projects</p>
               <div class="row">
+                  <div class="col-md-4 col-sm-12 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" data-target="#bedroomceiling" (click)="bedroomCeilingModal.show()">
+                          <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                              <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                          </div>
+                          <img class="img-fluid" src="../../assets/images/bedroom_ceiling_7.jpg" alt="Drywall Repair">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Ceiling Repair</h4>
+                            <p class="text-muted">Category: Drywall</p>
+                          </div>
+                      <div class="modal fade" bsModal #bedroomCeilingModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="bedroomceilingLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <ngb-carousel>
+                              <ng-template  ngbSlide>
+                                <img class="img-fluid" src="../../assets/images/bedroom_ceiling_1.jpg" alt="Plater Ceiling #1">
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                <img class="img-fluid" src="../../assets/images/bedroom_ceiling_2.jpg" alt="Plater Ceiling #2">
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                <img class="img-fluid" src="../../assets/images/bedroom_ceiling_3.jpg" alt="Exposed Lath">
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                <img class="img-fluid" src="../../assets/images/bedroom_ceiling_4.jpg" alt="Drywall #1">
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                <img class="img-fluid" src="../../assets/images/bedroom_ceiling_5.jpg" alt="Random second slide">
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                <img class="img-fluid" src="../../assets/images/bedroom_ceiling_6.jpg" alt="Random second slide">
+                              </ng-template>
+                              <ng-template ngbSlide>
+                                <img class="img-fluid" src="../../assets/images/bedroom_ceiling_7.jpg" alt="Random second slide">
+                              </ng-template>
+                            </ngb-carousel>
+                            <!-- Carousel End -->
+                            <p class="mt-2">The plaster ceiling in the older home was coming down. After carefully removing the plaster, I installed new drywall, spackled, and painted.</p>
+                              <ul class="list-inline item-intro text-muted">
+                                <li>Date: June 2019</li>
+                                <li>Client: Zack & Laura - Kensington</li>
+                                <li>Category: Drywall</li>
+                              </ul>
+                              <button class="btn btn-primary" data-dismiss="modal" type="button"  aria-label="Close" 
+                            (click)="bedroomCeilingModal.hide()">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 <div class="col-md-4 col-sm-12 portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" data-target="#flagstone" (click)="flagstoneModal.show()">
                         <div class="portfolio-hover">
@@ -139,6 +193,14 @@
                         </div>
                       </div>
                 </div>
+                <!-- buttons -->
+                <div class="col-md-4 col-sm-12 c2a">
+                    <button class="btn btn-primary font-italic" type="button" routerLink="../contact">Free Estimates</button>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary font-italic mb" type="button" routerLink="../services">Services I Provide</button>
+                </div>
+                <!-- buttons -->
                 <div class="col-md-4 col-sm-12 portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" (click)="garage_2_Modal.show()">
                         <div class="portfolio-hover">
@@ -184,12 +246,6 @@
                           </div>
                         </div>
                       </div>
-                </div>
-                <div class="col-md-4 col-sm-12 c2a">
-                    <button class="btn btn-primary font-italic" type="button" routerLink="../contact">Free Estimates</button>
-                    <br>
-                    <br>
-                    <button class="btn btn-primary font-italic mb" type="button" routerLink="../services">Services I Provide</button>
                 </div>
                 <div class="col-md-4 col-sm-12 portfolio-item">
                     <a class="portfolio-link" data-toggle="modal" (click)="solarShowerModal.show()">
