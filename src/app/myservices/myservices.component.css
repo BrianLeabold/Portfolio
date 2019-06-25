@@ -4,12 +4,25 @@
 
 .lead{
  padding-top: 1rem;
+ color: #093c67;
 }
 #aside{
     margin-top: 15px;
-    padding-left: 30px
+    padding-left: 30px;
+    margin-bottom: 80px;
+}
+#services{
+    margin-bottom: 70px;
 }
 
 .content{
     margin-top: 15px;
+}
+.list-group{
+    border: transparent
+
+}
+.list-group-item{
+    /* margin: auto; */
+    border: transparent;
 }

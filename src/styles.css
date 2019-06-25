@@ -32,3 +32,10 @@ header a{
    text-align: center;
    padding-right: 30px
 }
+.lead{
+   color: #093c67;
+}
+
+p{
+   font-size: 1.15rem;
+}
