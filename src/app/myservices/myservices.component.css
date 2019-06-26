@@ -7,6 +7,8 @@
  color: #093c67;
 }
 #aside{
+    display: block;
+    margin: auto;
     margin-top: 15px;
     padding-left: 30px;
     margin-bottom: 80px;
