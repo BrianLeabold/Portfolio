@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
+This project uses 2 prebuilt packages, BootstrapModule and NgbModule. BootstrapModule is used for the Bootstrap web components. While NgbModule is used for the modal windows in the PhotoComponent.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
