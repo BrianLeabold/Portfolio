@@ -84,14 +84,8 @@
   }
   
   .portfolio-modal .modal-content {
-    /* padding: 25px; */
     text-align: center;
   }
-  
-  /* .portfolio-modal .modal-content h2 {
-    font-size: 3em;
-    margin-bottom: 15px;
-  } */
   
   .portfolio-modal .modal-content p {
     margin-bottom: 10px;
@@ -164,7 +158,6 @@
           transform: translate3d(0, 0, 0);
 }
 .carousel-fade .carousel-control {
-  /* z-index: 2; */
   font-size: 500px;
   
 }

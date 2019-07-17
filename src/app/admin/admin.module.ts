@@ -12,11 +12,12 @@ import { EditUserComponent } from './edit-user/edit-user.component';
 import { AvatarDialogComponent } from './avatar-dialog/avatar-dialog.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [HomeComponent, ProjectComponent, ProjectListComponent, ProjectCreateComponent,
     ProjectUpdateComponent, UsersComponent, EditUserComponent, AvatarDialogComponent,
-    NewUserComponent, AdminComponent],
+    NewUserComponent, AdminComponent, LoginComponent],
   imports: [
     CommonModule, AdminRoutingModule
   ]

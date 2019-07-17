@@ -1,4 +1,89 @@
-<p>
-  contact works
-</p>
+<div class="row container-fluid content">
+  <div class="col-md-1"></div>
+  <div class="col-md-3 col-xs">
+    <h2 class="mb-1">Office Hours</h2>
+
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item list-group-item-light">Monday - Friday: 8am - 5pm</li>
+          <li class="list-group-item list-group-item-light">Saturday: 8pm - 1pm</li>
+          <li class="list-group-item list-group-item-light">Sunday: Closed</li>
+        </ul>
+  </div>
+  <div class="col-md-4 col-xs">
+    <h2 class="mb-1">Contact Me</h2>
+    <p class="lead">
+        Give me a call <span class="short">(619) 995-0506</span> and lets set a meeting. Or fill out this form and I will contact you asap.
+      </p>
+    <div class="alert alert-danger" role="alert" *ngIf="errorMsg">
+      {{errorMsg}}
+    </div>
+    <div class="alert alert-light" role="alert" *ngIf="successMsg">
+      <h5>{{successMsg}}</h5>
+    </div>
+    <form id="contactForm" #contactForm="ngForm" *ngIf="!submitted" (ngSubmit)="onSubmit()" novalidate>
+      <div class="form-group">
+        <input id="name" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched" type="text" class="form-control" name="userName" [(ngModel)]="contactModel.name" placeholder="Name">
+        <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is required</small>
+      </div>
+      <div ngModelGroup="address">
+        <div class="form-group">
+          <input id="city" required #city="ngModel" [class.is-invalid]="city.invalid && city.touched" type="text" class="form-control" name="city" [(ngModel)]="contactModel.city" placeholder="City">
+          <small class="text-danger" [class.d-none]="city.valid || city.untouched">Please enter your city</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <input id="email" required #email="ngModel" [class.is-invalid]="email.invalid && email.touched" type="email" class="form-control" name="email" [(ngModel)]="contactModel.email" placeholder="Email">
+        <small class="text-danger" [class.d-none]="email.valid || email.untouched">Please enter your email</small>
+      </div>
+      <div class="form-group">
+        <input id="phone" required #phone="ngModel" pattern="^\d{10}$" [class.is-invalid]="phone.invalid && phone.touched" type="tel" class="form-control" name="phone" [(ngModel)]="contactModel.phone" placeholder="Phone">
+        <div *ngIf="phone.errors && (phone.invalid || phone.touched)">
+          <small class="text-danger" *ngIf="phone.touched">Phone number is required <br></small>
+          <small class="text-danger" *ngIf="phone.dirty"> Phone number must be 10 digits</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <select id="topic" required #topic="ngModel" [class.is-invalid]="topic.invalid && topic.touched" class="custom-select" name="topic" [(ngModel)]="contactModel.topic">
+          <option value="">Please contact me about</option>
+          <option *ngFor="let topic of topics">{{ topic }}</option>
+        </select>
+        <small class="text-danger" [class.d-none]="topic.valid || topic.untouched">Please select an option</small>
+      </div>
+      <div class="form-group">
+        <textarea id="comment" #comment="ngModel" type="textarea" class="form-control" name="comment" [(ngModel)]="contactModel.comment" placeholder="Comments"></textarea>
+      </div>
+      <div class="mb-3">
+        <label>Time Preference</label>
+        <div class="form-check">
+          <input id="am" class="form-check-input" type="radio" name="timePreference" value="morning" [(ngModel)]="contactModel.timePreference">
+          <label class="form-check-label">Morning ( 9AM - 12PM )</label>
+        </div>
+        <div class="form-check">
+            <input id="pm" class="form-check-input" type="radio" name="timePreference" value="evening" [(ngModel)]="contactModel.timePreference">
+            <label class="form-check-label">Evening ( 5PM - 8PM )</label>
+          </div>
+      </div>
+      <div class="form-check mb3">
+        <input id="promo" class="form-check-input" type="checkbox" name="subscribe" [(ngModel)]="contactModel.subscribe">
+        <label class="form-check-label">Send me promo offers</label>
+      </div>
+      <br>
+      <button [disabled]="contactForm.form.invalid" [class.d-none]="contactForm.form.invalid" class="btn btn-info" type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="col-md-1">
+    <!-- Spacer Column -->
+  </div>
+  <div id="aside" class=" col-md-3 col-xs-12">
+    <img alt="Logo" src="../../assets/BHSlogo.png">
+    <hr>
+    <p class="lead">
+      Quality is like buy oats. If you want good clean oats, you need to pay
+      a fair price. But if you are ok with oats that have already been through
+      the horse, well those a a bit cheaper.
+    </p>
+  </div>
+</div>
+<script src='contact.js'></script>
+
 

@@ -3,6 +3,11 @@
     padding-left: 50px;
 }
 
+button.mybtn{
+   color: white;
+   background-color: #093c67;
+   cursor: pointer;
+}
 a{
    color: #093c67
 }

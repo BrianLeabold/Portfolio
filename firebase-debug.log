@@ -1,0 +1,38 @@
+[debug] [2019-07-15T22:51:46.432Z] ----------------------------------------------------------------------
+[debug] [2019-07-15T22:51:46.435Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Brian\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-07-15T22:51:46.435Z] CLI Version:   7.1.0
+[debug] [2019-07-15T22:51:46.435Z] Platform:      win32
+[debug] [2019-07-15T22:51:46.435Z] Node Version:  v10.16.0
+[debug] [2019-07-15T22:51:46.436Z] Time:          Mon Jul 15 2019 15:51:46 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-07-15T22:51:46.436Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-15T22:51:46.442Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-15T22:51:46.443Z] > authorizing via signed-in user
+[debug] [2019-07-15T22:51:46.443Z] [iam] checking project ang7portfolio for permissions ["firebase.projects.get"]
+[debug] [2019-07-15T22:51:46.444Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ang7portfolio:testIamPermissions  
+
+[debug] [2019-07-15T22:51:48.386Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-15T22:51:48.387Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ang7portfolio  
+ 
+[debug] [2019-07-15T22:51:50.895Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Brian\Documents\WebDev\Portfolio'...
+[info] 
+[debug] [2019-07-15T22:51:50.911Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ang7portfolio/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-07-15T22:51:50.942Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ang7portfolio/adminSdkConfig  
+ 
+[debug] [2019-07-15T22:51:52.920Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-15T22:51:52.948Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist/browser
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Brian\Documents\WebDev\Portfolio\functions" for Cloud Functions...
+[debug] [2019-07-15T22:51:53.747Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\Brian\\Documents\\WebDev\\Portfolio\\functions","node_version":"10.16.0"}
+[debug] [2019-07-15T22:51:53.748Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-07-15T22:51:53.752Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.2.0","resolution":"C:\\Users\\Brian\\Documents\\WebDev\\Portfolio\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-15T22:51:53.753Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.1.0","resolution":"C:\\Users\\Brian\\Documents\\WebDev\\Portfolio\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-15T22:51:53.754Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.1.0","resolution":"C:\\Users\\Brian\\Documents\\WebDev\\Portfolio\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-07-15T22:51:53.790Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.2.0","resolution":"C:\\Users\\Brian\\Documents\\WebDev\\Portfolio\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-07-15T22:51:53.822Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.2.0","resolution":"C:\\Users\\Brian\\Documents\\WebDev\\Portfolio\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
