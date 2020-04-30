@@ -43,7 +43,7 @@
     "eslint": "^6.0.1",
     "express": "^4.17.1",
     "firebase": "^6.3.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.14",
     "mongoose": "^5.7.5",
